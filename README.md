@@ -49,8 +49,8 @@ The REST endpoint will generate a GUID your data is stored into and respond with
 
 ## Put ##
 
-https://localhost:14544/json/A90F3635-DFC7-4BA9-BB65-08C9BCAFA894
-https://localhost:14544/json/123
+- https://localhost:14544/json/A90F3635-DFC7-4BA9-BB65-08C9BCAFA894
+- https://localhost:14544/json/123
 
 Body should contain valid JSON eg
 
@@ -136,3 +136,10 @@ Submitted PC details via powershell to quickly generate a report on makes and mo
       Write-Host "Failed: Failed to submit data, error: $_"
     }
 
+# Compiling #
+
+Delphi 10.4 is the current target version for compilation
+
+## Components ##
+- [JCL](https://github.com/project-jedi/jcl)
+- [JVCL](https://github.com/project-jedi/jvcl)
