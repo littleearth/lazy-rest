@@ -74,3 +74,4 @@ __recovery/
 .Trashes
 ehthumbs.db
 Thumbs.db
+/build

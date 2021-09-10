@@ -240,7 +240,7 @@ begin
           begin
             AJSON := AJSON + ',';
           end;
-          AJSON := AJSON + format('{ "ID":"%s" }',
+          AJSON := AJSON + format('{ "id":"%s" }',
             [ChangeFileExt(ExtractFileName(LFileName), '')]);
         end;
       end;
@@ -453,11 +453,11 @@ begin
         begin
           if ARequestInfo.CommandType = hcPOST then
           begin
-            LID := '';
+            LID := ARequestInfo.Params.Values['id'];
           end;
           if SaveJSON(LEndPoint, LID, LBody, ARequestInfo.Params) then
           begin
-            LResponseContent := '{ID: "' + LID + '"}';
+            LResponseContent := '{"id": "' + LID + '"}';
           end
           else
           begin
