@@ -1,6 +1,11 @@
 # LazyREST #
 
+![logo](https://user-images.githubusercontent.com/13463023/132789582-6b3fc6c4-411b-4106-8bbd-fe6aed35c1ca.png)
+
+
 LazyREST is a quick HTTP(s) web server that will accept JSON data for any simple endpoint. It stores data in flat JSON files to allow quick setup for mock and testing environments. 
+
+![image](https://user-images.githubusercontent.com/13463023/132789488-c5f7b138-ca4d-43ee-885c-eadd0f3d3229.png)
 
 For example
 
