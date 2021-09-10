@@ -1,0 +1,21 @@
+{
+    "firstName": "Fred",
+    "lastName": "Bloggs",
+    "age": 41,
+    "address": {
+        "streetAddress": "31 1st Street",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10021"
+    },
+    "phoneNumber": [
+        {
+            "type": "home",
+            "number": "212 555-4321"
+        },
+        {
+            "type": "fax",
+            "number": "646 555-7654"
+        }
+    ]
+}

@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "49ff77e5-53e2-4ff7-af8f-2d7f26b1d29e",
+		"name": "LazyREST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:14544/json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "14544",
+					"path": [
+						"json"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Zoom",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "offset",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:14544/json/4686E66A-ECA5-4527-ABAE-55A645A58E4D",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "14544",
+					"path": [
+						"json",
+						"4686E66A-ECA5-4527-ABAE-55A645A58E4D"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"7\",\r\n    \"name\":\"test 7\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:14544/json?validatejson=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "14544",
+					"path": [
+						"json"
+					],
+					"query": [
+						{
+							"key": "validatejson",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"7\",\r\n    \"name\":\"test 7 add 2\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:14544/json/4686E66A-ECA5-4527-ABAE-55A645A58E4E",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "14544",
+					"path": [
+						"json",
+						"4686E66A-ECA5-4527-ABAE-55A645A58E4E"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:14544/json/52D53AEA-FFD4-48FA-832E-BD679991E457?softdelete=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "14544",
+					"path": [
+						"json",
+						"52D53AEA-FFD4-48FA-832E-BD679991E457"
+					],
+					"query": [
+						{
+							"key": "softdelete",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE All",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:14544/json?softdelete=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "14544",
+					"path": [
+						"json"
+					],
+					"query": [
+						{
+							"key": "softdelete",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
